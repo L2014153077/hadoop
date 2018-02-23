@@ -2269,7 +2269,7 @@ public class RMAppAttemptImpl implements RMAppAttempt, Recoverable {
         return attempt.getBlacklistedNodes();
       }
     }
-    return Collections.EMPTY_SET;
+    return Collections.emptySet();
   }
 
   protected void onInvalidTranstion(RMAppAttemptEventType rmAppAttemptEventType,

@@ -713,7 +713,7 @@ public class Listing {
       if (tombstones != null) {
         this.tombstones = tombstones;
       } else {
-        this.tombstones = Collections.EMPTY_SET;
+        this.tombstones = Collections.emptySet();
       }
     }
 

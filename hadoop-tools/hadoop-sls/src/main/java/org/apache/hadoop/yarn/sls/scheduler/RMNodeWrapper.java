@@ -143,9 +143,8 @@ public class RMNodeWrapper implements RMNode {
   }
 
   @Override
-  @SuppressWarnings("unchecked")
   public List<UpdatedContainerInfo> pullContainerUpdates() {
-    List<UpdatedContainerInfo> list = Collections.EMPTY_LIST;
+    List<UpdatedContainerInfo> list = Collections.emptyList();
     if (! pulled) {
       list = updates;
       pulled = true;
@@ -173,11 +172,10 @@ public class RMNodeWrapper implements RMNode {
     // TODO Auto-generated method stub
   }
 
-  @SuppressWarnings("unchecked")
   @Override
   public List<Container> pullNewlyIncreasedContainers() {
     // TODO Auto-generated method stub
-    return Collections.EMPTY_LIST;
+    return Collections.emptyList();
   }
 
   public OpportunisticContainersStatus getOpportunisticContainersStatus() {
